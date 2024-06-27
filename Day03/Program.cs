@@ -305,24 +305,43 @@
              *which can't in foreach
              */
 
-          ///  int[] numbers = [1, 2, 3 , 4 ,5 ,6 ,7 ,8 ,9,10];
-          ///  for (int i = 0; i < numbers.Length; i++)
-          ///  {
-          ///      Console.WriteLine(numbers[i]);
-          ///  }
-          ///
-          ///  Console.WriteLine("*************************");
-          ///
-          ///  foreach (int number in numbers)
-          ///  {
-          ///      Console.WriteLine(number);
-          ///  }
+            ///  int[] numbers = [1, 2, 3 , 4 ,5 ,6 ,7 ,8 ,9,10];
+            ///  for (int i = 0; i < numbers.Length; i++)
+            ///  {
+            ///      Console.WriteLine(numbers[i]);
+            ///  }
+            ///
+            ///  Console.WriteLine("*************************");
+            ///
+            ///  foreach (int number in numbers)
+            ///  {
+            ///      Console.WriteLine(number);
+            ///  }
 
             #endregion
 
+            #region do while and while
+            //Q.check the enter number is even
+            int number;
+            bool flag;
+            ///do
+            ///{
+            ///    Console.Write("enter an even number: ");
+            ///    flag = int.TryParse(Console.ReadLine(), out number);
+            ///} while (number % 2 == 1 || !flag);
+            #endregion
 
-
-
+          ///  Console.Write("enter an even number: ");
+          ///  flag = int.TryParse(Console.ReadLine(), out number);
+          ///
+          ///  while (number % 2 == 1 || !flag)
+          ///  {
+          ///      Console.Write("enter an even number: ");
+          ///      flag = int.TryParse(Console.ReadLine(), out number);
+          ///
+          ///  }
+          ///
+          ///  Console.WriteLine($"the even number you entered is {number}");
 
         }
     }
