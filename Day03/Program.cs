@@ -265,19 +265,38 @@
             #endregion
 
             #region Example03
-            Person person = new Person() { Id=100 ,Name = "hema" };
-            string message = person switch
-            {
-                { Id: < 100 and > 50, Name: "hema" } => "hema your id between 50 and 100",
-                { Id: > 100 and < 150, Name: "hema" } => "hema your id between 100 and 200",
-                { Id:  100 , Name: "hema" } => "hema your id is 100"
+           /// Person person = new Person() { Id=100 ,Name = "hema" };
+           /// string message = person switch
+           /// {
+           ///     { Id: < 100 and > 50, Name: "hema" } => "hema your id between 50 and 100",
+           ///     { Id: > 100 and < 150, Name: "hema" } => "hema your id between 100 and 200",
+           ///     { Id:  100 , Name: "hema" } => "hema your id is 100"
+           ///
+           /// };
+           /// Console.WriteLine(message);
 
-            };
-            Console.WriteLine(message);
+            #endregion
 
             #endregion
 
+            #region Conditional Statements 2.loop statements
+            /*
+             * for => to repeat code a number of times
+             *     => to loop on elements in collection like array
+             *     
+             * while => to repeat code based on condition
+             * Do While => to repeat code that will repeat once atleast
+             * for each => to loop on collection
+             */
+
+            // example
+           /// for(int i=0; i<20; i++)
+           /// {
+           ///     Console.WriteLine("hello world");
+           /// }
             #endregion
+
+
 
 
 
