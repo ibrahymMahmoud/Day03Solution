@@ -1,7 +1,13 @@
 ﻿namespace Demo
 
 {
-    internal class Program
+    class Person
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+
+    }
+     class Program
     {
         static void Main(string[] args)
         {
@@ -99,36 +105,64 @@
             ///  else
             ///      Console.WriteLine("your name not found");
 
-           // Q.enter name of spasefic names
-          ///   Console.Write("enter your name: ");
-          ///   string name = Console.ReadLine() ?? "no name";
-          ///
-          ///  switch(name)
-          /// {
-          ///     case "ahmed":
-          ///         Console.WriteLine("hello ahmed");
-          ///         break;
-          ///     case "mohamed":
-          ///         Console.WriteLine("hello mohamed");
-          ///         break;
-          ///     case "ali":
-          ///         Console.WriteLine("hello ali");
-          ///         break;
-          ///     case "hema":
-          ///         Console.WriteLine("hello hema");
-          ///         break;
-          ///     case "maged":
-          ///         Console.WriteLine("hello maged");
-          ///         break;
-          ///     default:
-          ///         Console.WriteLine("your name  not found");
-          ///         break;
-          ///
-          /// }
-            
+            // Q.enter name of spasefic names
+            ///   Console.Write("enter your name: ");
+            ///   string name = Console.ReadLine() ?? "no name";
+            ///
+            ///  switch(name)
+            /// {
+            ///     case "ahmed":
+            ///         Console.WriteLine("hello ahmed");
+            ///         break;
+            ///     case "mohamed":
+            ///         Console.WriteLine("hello mohamed");
+            ///         break;
+            ///     case "ali":
+            ///         Console.WriteLine("hello ali");
+            ///         break;
+            ///     case "hema":
+            ///         Console.WriteLine("hello hema");
+            ///         break;
+            ///     case "maged":
+            ///         Console.WriteLine("hello maged");
+            ///         break;
+            ///     default:
+            ///         Console.WriteLine("your name  not found");
+            ///         break;
+            ///
+            /// }
+
             #endregion
 
+            #region Evolution of switch c#7.0
+            /// solve problem of limation types
+            ///it supports comparing types out of the box
+            ///when (do condition on case also)
+            ///more than one condition it relased in the next version
 
+           /// object input = new object();
+           /// input = 5;
+           /// switch (input) 
+           /// {
+           ///     case int localInput when localInput > 5:
+           ///         Console.WriteLine("it type of int");
+           ///         break;
+           ///     case string localInput:
+           ///         Console.WriteLine("it type of string");
+           ///         break;
+           ///     case Person person when person.Name=="ahmed"&&person.Id==200:
+           ///         Console.WriteLine("it type of int");
+           ///         break;
+           ///     case Person localInput:
+           ///         Console.WriteLine("it type of person");
+           ///         break;
+           ///     default:
+           ///         Console.WriteLine("none of them");
+           ///         break ;
+           /// }
+
+
+            #endregion
         }
     }
 }
