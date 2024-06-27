@@ -265,15 +265,15 @@
             #endregion
 
             #region Example03
-           /// Person person = new Person() { Id=100 ,Name = "hema" };
-           /// string message = person switch
-           /// {
-           ///     { Id: < 100 and > 50, Name: "hema" } => "hema your id between 50 and 100",
-           ///     { Id: > 100 and < 150, Name: "hema" } => "hema your id between 100 and 200",
-           ///     { Id:  100 , Name: "hema" } => "hema your id is 100"
-           ///
-           /// };
-           /// Console.WriteLine(message);
+            /// Person person = new Person() { Id=100 ,Name = "hema" };
+            /// string message = person switch
+            /// {
+            ///     { Id: < 100 and > 50, Name: "hema" } => "hema your id between 50 and 100",
+            ///     { Id: > 100 and < 150, Name: "hema" } => "hema your id between 100 and 200",
+            ///     { Id:  100 , Name: "hema" } => "hema your id is 100"
+            ///
+            /// };
+            /// Console.WriteLine(message);
 
             #endregion
 
@@ -286,17 +286,39 @@
              *     
              * while => to repeat code based on condition
              * Do While => to repeat code that will repeat once atleast
-             * for each => to loop on collection
+             * for each => to loop on collection 
+             *          => make نسخه from array
              */
 
             // example
-           /// for(int i=0; i<20; i++)
-           /// {
-           ///     Console.WriteLine("hello world");
-           /// }
+            /// for(int i=0; i<20; i++)
+            /// {
+            ///     Console.WriteLine("hello world");
+            /// }
             #endregion
 
+            #region For && For each 
 
+            /*
+             *in for loop i have fully controll on array
+             *i can break and continue 
+             *which can't in foreach
+             */
+
+          ///  int[] numbers = [1, 2, 3 , 4 ,5 ,6 ,7 ,8 ,9,10];
+          ///  for (int i = 0; i < numbers.Length; i++)
+          ///  {
+          ///      Console.WriteLine(numbers[i]);
+          ///  }
+          ///
+          ///  Console.WriteLine("*************************");
+          ///
+          ///  foreach (int number in numbers)
+          ///  {
+          ///      Console.WriteLine(number);
+          ///  }
+
+            #endregion
 
 
 
