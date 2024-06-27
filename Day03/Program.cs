@@ -65,22 +65,69 @@
             ///     Console.WriteLine("your age is 22");
 
             //Q.check age is greater than 22 (switch)
-         ///    Console.Write("Enter your age: ");
-         ///    int.TryParse(Console.ReadLine(), out int Age);
-         ///   switch(Age)
-         ///   {
-         ///       case > 22:
-         ///           Console.WriteLine("your age is more than 22");
-         ///           break;
-         ///       case < 22:
-         ///           Console.WriteLine("your age is less than 22");
-         ///           break;
-         ///       default:
-         ///           Console.WriteLine("you age is 22");
-         ///           break;
-         ///   }
+            ///    Console.Write("Enter your age: ");
+            ///    int.TryParse(Console.ReadLine(), out int Age);
+            ///   switch(Age)
+            ///   {
+            ///       case > 22:
+            ///           Console.WriteLine("your age is more than 22");
+            ///           break;
+            ///       case < 22:
+            ///           Console.WriteLine("your age is less than 22");
+            ///           break;
+            ///       default:
+            ///           Console.WriteLine("you age is 22");
+            ///           break;
+            ///   }
 
             #endregion
+
+            #region conditional statments if,switch (string datatype)
+            //Q.enter name of spasefic names
+            ///  Console.Write("enter your name: ");
+            ///  string name = Console.ReadLine() ?? "no name";
+            ///  if(name == "ahmed")
+            ///      Console.WriteLine("hello ahmed");
+            ///  else if (name == "mohamed")
+            ///      Console.WriteLine("hello mohamed");
+            ///  else if (name == "ali")
+            ///      Console.WriteLine("hello ali");
+            ///  else if (name == "hema")
+            ///      Console.WriteLine("hello hema");
+            ///  else if (name == "maged")
+            ///      Console.WriteLine("hello maged");
+            ///  else
+            ///      Console.WriteLine("your name not found");
+
+           // Q.enter name of spasefic names
+          ///   Console.Write("enter your name: ");
+          ///   string name = Console.ReadLine() ?? "no name";
+          ///
+          ///  switch(name)
+          /// {
+          ///     case "ahmed":
+          ///         Console.WriteLine("hello ahmed");
+          ///         break;
+          ///     case "mohamed":
+          ///         Console.WriteLine("hello mohamed");
+          ///         break;
+          ///     case "ali":
+          ///         Console.WriteLine("hello ali");
+          ///         break;
+          ///     case "hema":
+          ///         Console.WriteLine("hello hema");
+          ///         break;
+          ///     case "maged":
+          ///         Console.WriteLine("hello maged");
+          ///         break;
+          ///     default:
+          ///         Console.WriteLine("your name  not found");
+          ///         break;
+          ///
+          /// }
+            
+            #endregion
+
 
         }
     }
