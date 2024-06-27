@@ -163,21 +163,21 @@
             /// 
 
             #region Example02
-           ///  Console.Write("Enter your Age: ");
-           ///  double age = double.Parse( Console.ReadLine()!);
-           ///  switch (age) 
-           ///  {
-           ///      case double when age >= 20 && age <= 30:
-           ///          Console.WriteLine("your age is between 20 and 30");
-           ///          break;
-           ///      case double when age > 30 && age <= 40:
-           ///          Console.WriteLine("your age is between 30 and 40");
-           ///          break;
-           ///      default :
-           ///          Console.WriteLine("your age not between 30 and 40");
-           ///          break;
-           ///  }
-            
+            ///  Console.Write("Enter your Age: ");
+            ///  double age = double.Parse( Console.ReadLine()!);
+            ///  switch (age) 
+            ///  {
+            ///      case double when age >= 20 && age <= 30:
+            ///          Console.WriteLine("your age is between 20 and 30");
+            ///          break;
+            ///      case double when age > 30 && age <= 40:
+            ///          Console.WriteLine("your age is between 30 and 40");
+            ///          break;
+            ///      default :
+            ///          Console.WriteLine("your age not between 30 and 40");
+            ///          break;
+            ///  }
+
             #endregion
 
 
@@ -218,6 +218,44 @@
             // infinite loop
             // but correct used of goto in switch
             // label will compile no need goto to call it
+
+            #endregion
+
+            #region Evolution of switch 8.0
+            //switch Expertion
+
+          ///  string message=string.Empty;
+          ///  Console.Write("Enter your option: ");
+          ///  int.TryParse(Console.ReadLine(), out int option);
+          ///
+          ///  message = option switch
+          ///  {
+          ///      1 => "using option 1",
+          ///      2 => "using option 2",
+          ///      3 => "using option 3",
+          ///      4 => "using option 4",
+          ///      5 => "using option 5",
+          ///      _ => "not using this option"
+          ///  };
+          ///
+          ///  Console.WriteLine(message);
+          ///  
+
+          ///  Person person = new Person();
+          ///  person.Id = 5;
+          ///  person.Name = "yasta";
+          ///  switch(person)
+          ///  {
+          ///      case { Id: 1, Name: "mohamed" }:
+          ///          Console.WriteLine("hello ya mohamed");
+          ///          break;
+          ///      case Person  when person.Id == 5 && person.Name=="yasta" :
+          ///          Console.WriteLine("hello yasta");
+          ///          break;
+          ///      default:
+          ///          Console.WriteLine("not found");
+          ///          break;
+          ///  }
 
             #endregion
 
