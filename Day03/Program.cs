@@ -52,7 +52,35 @@
 
             #endregion
 
+            #region control Statements 1.Conditional Statements [if , switch] more than and less than
+            //Q.check age is greater than 22 (if)
+            /// Console.Write("Enter your age: ");
+            /// int.TryParse(Console.ReadLine(), out int Age);
+            /// if (Age > 22) {
+            ///     Console.WriteLine("your age more than 22");
+            /// } else if (Age < 22)
+            /// {
+            ///     Console.WriteLine("your age is less than 22");
+            /// }else
+            ///     Console.WriteLine("your age is 22");
 
+            //Q.check age is greater than 22 (switch)
+         ///    Console.Write("Enter your age: ");
+         ///    int.TryParse(Console.ReadLine(), out int Age);
+         ///   switch(Age)
+         ///   {
+         ///       case > 22:
+         ///           Console.WriteLine("your age is more than 22");
+         ///           break;
+         ///       case < 22:
+         ///           Console.WriteLine("your age is less than 22");
+         ///           break;
+         ///       default:
+         ///           Console.WriteLine("you age is 22");
+         ///           break;
+         ///   }
+
+            #endregion
 
         }
     }
