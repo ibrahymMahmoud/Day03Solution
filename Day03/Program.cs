@@ -1,5 +1,4 @@
 ﻿namespace Demo
-
 {
     class Person
     {
@@ -221,43 +220,66 @@
 
             #endregion
 
-            #region Evolution of switch 8.0
+            #region Evolution of switch 8.0 and 9.0
             //switch Expertion
+            #region Example01
 
-          ///  string message=string.Empty;
-          ///  Console.Write("Enter your option: ");
-          ///  int.TryParse(Console.ReadLine(), out int option);
-          ///
-          ///  message = option switch
-          ///  {
-          ///      1 => "using option 1",
-          ///      2 => "using option 2",
-          ///      3 => "using option 3",
-          ///      4 => "using option 4",
-          ///      5 => "using option 5",
-          ///      _ => "not using this option"
-          ///  };
-          ///
-          ///  Console.WriteLine(message);
-          ///  
+            ///  string message=string.Empty;
+            ///  Console.Write("Enter your option: ");
+            ///  int.TryParse(Console.ReadLine(), out int option);
+            ///
+            ///  message = option switch
+            ///  {
+            ///      1 => "using option 1",
+            ///      2 => "using option 2",
+            ///      3 => "using option 3",
+            ///      4 => "using option 4",
+            ///      5 => "using option 5",
+            ///      _ => "not using this option"
+            ///  };
+            ///
+            ///  Console.WriteLine(message);
+            ///   
+            #endregion
 
-          ///  Person person = new Person();
-          ///  person.Id = 5;
-          ///  person.Name = "yasta";
-          ///  switch(person)
-          ///  {
-          ///      case { Id: 1, Name: "mohamed" }:
-          ///          Console.WriteLine("hello ya mohamed");
-          ///          break;
-          ///      case Person  when person.Id == 5 && person.Name=="yasta" :
-          ///          Console.WriteLine("hello yasta");
-          ///          break;
-          ///      default:
-          ///          Console.WriteLine("not found");
-          ///          break;
-          ///  }
+            #region Example02
+            ///  Person person = new Person();
+            ///  person.Id = 5;
+            ///  person.Name = "yasta";
+            ///   switch(person)
+            ///   {
+            ///       case { Id: 1, Name: "mohamed" }:
+            ///  Console.WriteLine("hello ya mohamed");
+            ///           break;
+            ///         case { Id: >1 and <10 , Name: "mohamed" }: //new
+            ///  Console.WriteLine("hello ya mohamed");
+            ///         break;
+            ///     case Person when person.Id == 5 && person.Name == "yasta":
+            ///  Console.WriteLine("hello yasta");
+            ///           break;
+            ///     default:
+            ///  Console.WriteLine("not found");
+            ///           break;
+            ///   }
 
             #endregion
+
+            #region Example03
+            Person person = new Person() { Id=100 ,Name = "hema" };
+            string message = person switch
+            {
+                { Id: < 100 and > 50, Name: "hema" } => "hema your id between 50 and 100",
+                { Id: > 100 and < 150, Name: "hema" } => "hema your id between 100 and 200",
+                { Id:  100 , Name: "hema" } => "hema your id is 100"
+
+            };
+            Console.WriteLine(message);
+
+            #endregion
+
+            #endregion
+
+
 
 
 
