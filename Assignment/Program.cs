@@ -1,5 +1,7 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.Security.Cryptography;
+using System.Threading;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -487,6 +489,36 @@ namespace Assignment
 
             #endregion
 
+            #region Q17
+            // 17 - Create a program that asks the user to input
+            // three points(x1, y1), (x2, y2), and(x3, y3),
+            // and determines whether these points lie on a single straight line.
+
+
+            ///     Console.WriteLine("Enter the coordinates of the first point (x1, y1):");
+            ///     double x1 = double.Parse(Console.ReadLine());
+            ///     double y1 = double.Parse(Console.ReadLine());
+            ///
+            ///     Console.WriteLine("Enter the coordinates of the second point (x2, y2):");
+            ///     double x2 = double.Parse(Console.ReadLine());
+            ///     double y2 = double.Parse(Console.ReadLine());
+            ///
+            ///     Console.WriteLine("Enter the coordinates of the third point (x3, y3):");
+            ///     double x3 = double.Parse(Console.ReadLine());
+            ///     double y3 = double.Parse(Console.ReadLine());
+            ///
+            ///     double slope1 = (y2-y1) / (x2-x1);
+            ///     double slope2 = (y3 - y2) / (x3 - x2);
+            ///     if(slope1==slope2)
+            ///         Console.WriteLine("the points lie on straight line");
+            ///     else
+            ///         Console.WriteLine("this points not lie on straight line");
+
+
+            #endregion
+
+           
+
 
 
 
@@ -495,5 +527,5 @@ namespace Assignment
 
         }
 
-    }
+}
 }
