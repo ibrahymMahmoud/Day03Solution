@@ -79,19 +79,45 @@ namespace Assignment
             //then check If a number is even or odd.
 
 
-           /// int Number;
-           ///      bool flag;
-           ///      do
-           ///      {
-           ///          Console.Write("Enter the Number: ");
-           ///          flag = int.TryParse(Console.ReadLine(), out Number);
-           ///      } while (!flag);
-           ///      if(Number%2==0)
-           ///        Console.WriteLine("the Number is even ");
-           ///      else
-           ///        Console.WriteLine("the Number is odd");
+            /// int Number;
+            ///      bool flag;
+            ///      do
+            ///      {
+            ///          Console.Write("Enter the Number: ");
+            ///          flag = int.TryParse(Console.ReadLine(), out Number);
+            ///      } while (!flag);
+            ///      if(Number%2==0)
+            ///        Console.WriteLine("the Number is even ");
+            ///      else
+            ///        Console.WriteLine("the Number is odd");
 
             #endregion
+
+            #region Q5
+            //5- Write a program that takes character from the user then
+            //if it is a vowel chars (a,e,I,o,u) then print (vowel)
+            //otherwise print (consonant).
+
+
+          ///   string Number;
+          ///   int num=5;
+          ///  bool flag = true;
+          ///        do
+          ///        {
+          ///            Console.Write("Enter the Number: ");
+          ///            Number= Console.ReadLine()!;
+          ///            int.TryParse(Number, out num);
+          ///            if(num == 0 && Number.Length == 1)
+          ///              flag = false;
+          ///        } while ( flag );
+          ///
+          ///        if(Number == "a" || Number == "e" || Number == "i" || Number == "o" || Number == "u")
+          ///          Console.WriteLine("the char is vowel ");
+          ///        else
+          ///          Console.WriteLine(" consonant");
+
+            #endregion
+
 
 
         }
