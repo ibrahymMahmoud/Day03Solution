@@ -413,7 +413,7 @@ namespace Demo
             #endregion
             #endregion
 
-         #region Array 2 D array
+         #region Array 1 D array
          int[] numbers;
          //declare for reference of type (array of integer) 
          //this reference 'number' is refering to the default value of reference type=NULL
@@ -428,17 +428,53 @@ namespace Demo
          numbers[1] = 2;
          numbers[2] = 3;
             //to display array data
-         ///   Console.WriteLine(numbers[0]);
-         ///   Console.WriteLine(numbers[1]);
-         ///   Console.WriteLine(numbers[2]);
-         ///   Console.WriteLine("length " + numbers.Length + " dimentional "+numbers.Rank);
-         ///
-         ///   for (int i = 0; i < numbers.Length; i++)
-         ///   {
-         ///       Console.WriteLine(numbers[i]);
-         ///   }
+            ///   Console.WriteLine(numbers[0]);
+            ///   Console.WriteLine(numbers[1]);
+            ///   Console.WriteLine(numbers[2]);
+            ///   Console.WriteLine("length " + numbers.Length + " dimentional "+numbers.Rank);
+            ///
+            ///   for (int i = 0; i < numbers.Length; i++)
+            ///   {
+            ///       Console.WriteLine(numbers[i]);
+            ///   }
 
 
+            #endregion
+
+            #region Array 2 D array
+            int[,] student = new int[3,5] { { 1, 2, 3, 4, 5 }, { 1, 2, 3, 4, 5 }, { 1, 2, 3, 4, 5 } };
+            int[,] students = new int[3, 5] { { 1, 2, 3, 4, 5 }, { 1, 2, 3, 4, 5 }, { 1, 2, 3, 4, 5 } };
+            //clr will allocate 60bytes at heap
+            //clr will allocate values with default value 0
+
+
+            //to enter this elements
+            for (int i = 0; i < students.GetLength(0)/*3*/; i++)
+            {
+                Console.WriteLine($"Enter values of student NO.[{i+1}]");
+
+                for (int j = 0; j < students.GetLength(1)/*3*/; /*j++*/) 
+                {
+                    Console.Write($"Enter value of student NO{i} for materal NO.[{j+1}]: ");
+                    //  students[i,j]=int.Parse(Console.ReadLine()); //tocheck all senairos
+                    j = int.TryParse(Console.ReadLine(), out students[i, j]) ? ++j:j ;
+
+                }
+       
+            }
+            Console.WriteLine("\n  display array \n");
+            //to display them
+            for (int i = 0; i < 3; i++)
+            {
+
+                for (int j = 0; j < 5; j++)
+                {
+                    Console.WriteLine($"students[{i}, {j}]: {students[i, j]} ");
+
+                }
+                Console.WriteLine("\n*************");
+
+            }
             #endregion
 
 
