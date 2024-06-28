@@ -99,26 +99,41 @@ namespace Assignment
             //otherwise print (consonant).
 
 
-          ///   string Number;
-          ///   int num=5;
-          ///  bool flag = true;
-          ///        do
-          ///        {
-          ///            Console.Write("Enter the Number: ");
-          ///            Number= Console.ReadLine()!;
-          ///            int.TryParse(Number, out num);
-          ///            if(num == 0 && Number.Length == 1)
-          ///              flag = false;
-          ///        } while ( flag );
-          ///
-          ///        if(Number == "a" || Number == "e" || Number == "i" || Number == "o" || Number == "u")
-          ///          Console.WriteLine("the char is vowel ");
-          ///        else
-          ///          Console.WriteLine(" consonant");
+            ///   string Number;
+            ///   int num=5;
+            ///  bool flag = true;
+            ///        do
+            ///        {
+            ///            Console.Write("Enter the Number: ");
+            ///            Number= Console.ReadLine()!;
+            ///            int.TryParse(Number, out num);
+            ///            if(num == 0 && Number.Length == 1)
+            ///              flag = false;
+            ///        } while ( flag );
+            ///
+            ///        if(Number == "a" || Number == "e" || Number == "i" || Number == "o" || Number == "u")
+            ///          Console.WriteLine("the char is vowel ");
+            ///        else
+            ///          Console.WriteLine(" consonant");
 
             #endregion
 
+            #region Q6
+            //6- Write a program that allows the user to insert an integer
+            //then print all numbers between 1 to that number.
 
+          ///     int Number;
+          ///     bool flag;
+          ///     do
+          ///     {
+          ///         Console.Write("Enter the Number: ");
+          ///         flag = int.TryParse(Console.ReadLine(), out Number);
+          ///     } while (!flag);
+          ///
+          ///     for (int i = 1; i <= Number; i++)
+          ///      Console.WriteLine(i);
+           
+            #endregion
 
         }
     }
