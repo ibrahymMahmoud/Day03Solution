@@ -586,13 +586,31 @@ namespace Assignment
             #region Q20
             //20- Write a program in C# Sharp to find the sum of all elements of the array.
 
-       ///     int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
-       ///     int sum = 0;
-       ///     for (int i = 0; i < numbers.Length; i++)
-       ///     {
-       ///         sum += numbers[i];
-       ///     }
-       ///     Console.WriteLine("the sum of array is: "+sum);
+            ///     int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+            ///     int sum = 0;
+            ///     for (int i = 0; i < numbers.Length; i++)
+            ///     {
+            ///         sum += numbers[i];
+            ///     }
+            ///     Console.WriteLine("the sum of array is: "+sum);
+            #endregion
+
+            #region Q21
+            //21- Write a program in C# Sharp to merge two arrays of the same size
+            //sorted in ascending order.
+
+
+           /// int[] numbers01 = {5,4,3,2,1,0};
+           /// int[] numbers02 = {6,7,8,9,10,11};
+           /// int[] numbers03 = new int[numbers01.Length + numbers02.Length];
+           ///  numbers01.CopyTo(numbers03, 0);
+           ///  numbers02.CopyTo(numbers03, numbers01.Length);
+           /// Array.Sort(numbers03);
+           /// for (int i = 0; i < numbers03.Length; i++)
+           /// {
+           ///     Console.WriteLine($"the number03[{i}]: {numbers03[i]}");
+           /// }
+
             #endregion
 
 
