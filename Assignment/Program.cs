@@ -517,7 +517,41 @@ namespace Assignment
 
             #endregion
 
-           
+            #region Q18
+
+      ///            int hoursWorked;
+      ///               bool flag;
+      ///               do
+      ///               {
+      ///                   Console.Write("Enter the time taken to complete the task (in hours): ");
+      ///                   flag = int.TryParse(Console.ReadLine(), out hoursWorked);
+      ///               } while (!flag);
+      ///
+      ///
+      ///      string efficiencyLevel;
+      ///
+      ///      switch (hoursWorked)
+      ///      {
+      ///          case int n when (n >= 2 && n <= 3):
+      ///              efficiencyLevel = "Highly Efficient";
+      ///              break;
+      ///          case int n when (n > 3 && n <= 4):
+      ///              efficiencyLevel = "Increase Speed";
+      ///              break;
+      ///          case int n when (n > 4 && n <= 5):
+      ///              efficiencyLevel = "Provide Training";
+      ///              break;
+      ///          case int n when (n > 5):
+      ///              efficiencyLevel = "Leave the Company";
+      ///              break;
+      ///          default:
+      ///              efficiencyLevel = "Invalid Input";
+      ///              break;
+      ///      }
+      ///
+      ///      Console.WriteLine($"Efficiency Level: {efficiencyLevel}");
+
+            #endregion
 
 
 
