@@ -253,50 +253,118 @@ namespace Assignment
             #endregion
 
             #region Q11
-            
-        ///    int monthNumber;
-        ///       bool flag;
-        ///       do
-        ///       {
-        ///           Console.Write("Enter the month Number: ");
-        ///           flag = int.TryParse(Console.ReadLine(), out monthNumber);
-        ///           if ( flag && monthNumber < 1 && monthNumber > 12)
-        ///           flag=false;
-        ///           else
-        ///            flag = true;
-        ///
-        ///       } while (flag );
-        ///    
-        ///    int daysInMonth;
-        ///    switch (monthNumber)
-        ///    {
-        ///        case 1:
-        ///        case 3:
-        ///        case 5:
-        ///        case 7:
-        ///        case 8:
-        ///        case 10:
-        ///        case 12:
-        ///            daysInMonth = 31;
-        ///            break;
-        ///        case 4:
-        ///        case 6:
-        ///        case 9:
-        ///        case 11:
-        ///            daysInMonth = 30;
-        ///            break;
-        ///        case 2:
-        ///            daysInMonth = 28; 
-        ///            break;
-        ///        default:
-        ///            daysInMonth = -1; // Invalid month number
-        ///            break;
-        ///    }
-        ///         Console.WriteLine($"Days in Month {monthNumber}: {daysInMonth}");
-           
+
+            ///    int monthNumber;
+            ///       bool flag;
+            ///       do
+            ///       {
+            ///           Console.Write("Enter the month Number: ");
+            ///           flag = int.TryParse(Console.ReadLine(), out monthNumber);
+            ///           if ( flag && monthNumber < 1 && monthNumber > 12)
+            ///           flag=false;
+            ///           else
+            ///            flag = true;
+            ///
+            ///       } while (flag );
+            ///    
+            ///    int daysInMonth;
+            ///    switch (monthNumber)
+            ///    {
+            ///        case 1:
+            ///        case 3:
+            ///        case 5:
+            ///        case 7:
+            ///        case 8:
+            ///        case 10:
+            ///        case 12:
+            ///            daysInMonth = 31;
+            ///            break;
+            ///        case 4:
+            ///        case 6:
+            ///        case 9:
+            ///        case 11:
+            ///            daysInMonth = 30;
+            ///            break;
+            ///        case 2:
+            ///            daysInMonth = 28; 
+            ///            break;
+            ///        default:
+            ///            daysInMonth = -1; // Invalid month number
+            ///            break;
+            ///    }
+            ///         Console.WriteLine($"Days in Month {monthNumber}: {daysInMonth}");
+
 
 
             #endregion
+
+            #region Q12
+
+         ///   double num1, num2, result;
+         ///   string op;
+         ///
+         ///    first:
+         ///   Console.Write("Enter the first number: ");
+         ///   if (!double.TryParse(Console.ReadLine(), out num1))
+         ///   {
+         ///       Console.WriteLine("Invalid input. Please enter a valid number.");
+         ///       goto first;
+         ///   }
+         ///
+         ///   
+         ///   second:
+         ///   Console.Write("Enter the operator (+, -, *, /): ");
+         ///   op = Console.ReadLine()!;
+         ///   if (op == "+" || op == "-" || op == "*" || op == "/"  )
+         ///   {
+         ///       Console.WriteLine("it valid operator");
+         ///   }
+         ///   else 
+         ///   {
+         ///       Console.WriteLine("Invalid input. Please enter a valid operator.");
+         ///       goto second;
+         ///   }
+         ///
+         ///   third:
+         ///   Console.Write("Enter the second number: ");
+         ///   if (!double.TryParse(Console.ReadLine(), out num2))
+         ///   {
+         ///       Console.WriteLine("Invalid input. Please enter a valid number.");
+         ///       goto third;
+         ///   }
+         ///
+         ///   
+         ///   switch (op)
+         ///   {
+         ///       case "+":
+         ///           result = num1 + num2;
+         ///           Console.WriteLine($"Result: {num1} + {num2} = {result}");
+         ///           break;
+         ///       case "-":
+         ///           result = num1 - num2;
+         ///           Console.WriteLine($"Result: {num1} - {num2} = {result}");
+         ///           break;
+         ///       case "*" :
+         ///           result = num1 * num2;
+         ///           Console.WriteLine($"Result: {num1} * {num2} = {result}");
+         ///           break;
+         ///       case "/" :
+         ///           if (num2 == 0)
+         ///           {
+         ///               Console.WriteLine("Error: Division by zero.");
+         ///               return;
+         ///           }
+         ///           result = num1 / num2;
+         ///           Console.WriteLine($"Result: {num1} / {num2} = {result}");
+         ///           break;
+         ///       default:
+         ///           Console.WriteLine("Error: Invalid operator.");
+         ///           return;
+         ///   }
+         ///
+            #endregion
+
+
 
         }
     }
