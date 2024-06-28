@@ -211,47 +211,92 @@ namespace Assignment
             //10- Write a program to enter marks of five subjects
             //and calculate total, average and percentage.
 
-            
 
-            
-        ///    double total =0;
-        ///    double average;
-        ///    double percentage;
-        ///    double subjectMark;
-        ///    bool flag;
-        ///
-        ///    Console.WriteLine("Enter marks of subjects from 100 (full mark = 100) ");
-        ///
-        ///    for (int i = 0; i < 5; i++)
-        ///    {
-        ///         do
-        ///         {
-        ///             Console.Write($"Enter the Number of subject{i+1}: ");
-        ///             flag = double.TryParse(Console.ReadLine(), out subjectMark);
-        ///
-        ///            if( flag && subjectMark <= 100 && subjectMark >= 0)
-        ///                flag= false;
-        ///            else 
-        ///                flag = true;   
-        ///
-        ///         } while (flag);
-        ///
-        ///        total = total + subjectMark;
-        ///
-        ///    }
-        ///
-        ///     average = total / 5;
-        ///     percentage = total / 500 * 100;
-        ///
-        ///
-        ///    Console.WriteLine("\nResults:");
-        ///    Console.WriteLine($"Total marks: {total}");
-        ///    Console.WriteLine($"Average marks: {average:F2}");
-        ///    Console.WriteLine($"Percentage: {percentage:F2}%");
-           
+
+
+            ///    double total =0;
+            ///    double average;
+            ///    double percentage;
+            ///    double subjectMark;
+            ///    bool flag;
+            ///
+            ///    Console.WriteLine("Enter marks of subjects from 100 (full mark = 100) ");
+            ///
+            ///    for (int i = 0; i < 5; i++)
+            ///    {
+            ///         do
+            ///         {
+            ///             Console.Write($"Enter the Number of subject{i+1}: ");
+            ///             flag = double.TryParse(Console.ReadLine(), out subjectMark);
+            ///
+            ///            if( flag && subjectMark <= 100 && subjectMark >= 0)
+            ///                flag= false;
+            ///            else 
+            ///                flag = true;   
+            ///
+            ///         } while (flag);
+            ///
+            ///        total = total + subjectMark;
+            ///
+            ///    }
+            ///
+            ///     average = total / 5;
+            ///     percentage = total / 500 * 100;
+            ///
+            ///
+            ///    Console.WriteLine("\nResults:");
+            ///    Console.WriteLine($"Total marks: {total}");
+            ///    Console.WriteLine($"Average marks: {average:F2}");
+            ///    Console.WriteLine($"Percentage: {percentage:F2}%");
+
 
             #endregion
 
+            #region Q11
+            
+        ///    int monthNumber;
+        ///       bool flag;
+        ///       do
+        ///       {
+        ///           Console.Write("Enter the month Number: ");
+        ///           flag = int.TryParse(Console.ReadLine(), out monthNumber);
+        ///           if ( flag && monthNumber < 1 && monthNumber > 12)
+        ///           flag=false;
+        ///           else
+        ///            flag = true;
+        ///
+        ///       } while (flag );
+        ///    
+        ///    int daysInMonth;
+        ///    switch (monthNumber)
+        ///    {
+        ///        case 1:
+        ///        case 3:
+        ///        case 5:
+        ///        case 7:
+        ///        case 8:
+        ///        case 10:
+        ///        case 12:
+        ///            daysInMonth = 31;
+        ///            break;
+        ///        case 4:
+        ///        case 6:
+        ///        case 9:
+        ///        case 11:
+        ///            daysInMonth = 30;
+        ///            break;
+        ///        case 2:
+        ///            daysInMonth = 28; 
+        ///            break;
+        ///        default:
+        ///            daysInMonth = -1; // Invalid month number
+        ///            break;
+        ///    }
+        ///         Console.WriteLine($"Days in Month {monthNumber}: {daysInMonth}");
+           
+
+
+            #endregion
 
         }
     }
