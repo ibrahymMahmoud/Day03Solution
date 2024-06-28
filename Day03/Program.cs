@@ -324,24 +324,68 @@
             //Q.check the enter number is even
             int number;
             bool flag;
+
+            #region Example on do while
             ///do
             ///{
             ///    Console.Write("enter an even number: ");
             ///    flag = int.TryParse(Console.ReadLine(), out number);
-            ///} while (number % 2 == 1 || !flag);
+            ///} while (number % 2 == 1 || !flag); 
             #endregion
 
-          ///  Console.Write("enter an even number: ");
-          ///  flag = int.TryParse(Console.ReadLine(), out number);
-          ///
-          ///  while (number % 2 == 1 || !flag)
-          ///  {
-          ///      Console.Write("enter an even number: ");
-          ///      flag = int.TryParse(Console.ReadLine(), out number);
-          ///
-          ///  }
-          ///
-          ///  Console.WriteLine($"the even number you entered is {number}");
+
+            #region Example on while
+            ///  Console.Write("enter an even number: ");
+            ///  flag = int.TryParse(Console.ReadLine(), out number);
+            ///
+            ///  while (number % 2 == 1 || !flag)
+            ///  {
+            ///      Console.Write("enter an even number: ");
+            ///      flag = int.TryParse(Console.ReadLine(), out number);
+            ///
+            ///  }
+            ///
+            ///  Console.WriteLine($"the even number you entered is {number}");
+            ///   
+            #endregion
+
+
+            #endregion
+
+            #region String
+            //string is a class [reference type], internally is an array of chars
+            //string is an immutable type -->can't be changed [internally is an array of chars:array is fixed length]
+            string Name;
+            //Declare for reference of type "string"
+            //this reference 'name' is refering to the default value of reference type = null
+            //clr will allocate 4 bytes as stack for the reference 'name'
+            //clr will allocate 0 bytes at heap
+
+            Name = new string("hema");
+            //clr will allocate 8 bytes at heap 2 bytes for each char
+            //call constractor
+            //load string if the 2 string with same value will get the same hash code  
+            //   Name = "ahmed"; // this is syntax suger
+            //   string Name02 = "ahmed";
+            //   Console.WriteLine($"namem.hash code: {Name.GetHashCode()}");
+            //   Console.WriteLine($"namem.hash code: {Name.GetHashCode()}");
+
+
+            //example
+         ///  string message01 = "ahmed";
+         ///  Console.WriteLine($"ahmed hash code: {message01.GetHashCode()}");
+         ///  message01 = "hamed";
+         ///  Console.WriteLine($"hamed hash code: {message01.GetHashCode()}");
+         ///  string message02 = "hemaa";
+         ///  Console.WriteLine($"ahmed hash code: {message01.GetHashCode()}");
+         ///  Console.WriteLine($"hemaa hash code: {message02.GetHashCode()}");
+         ///  Console.WriteLine("*****after equality******");
+         ///  message02 = message01;
+         ///  Console.WriteLine($"ahmed hash code: {message01.GetHashCode()}");
+         ///  Console.WriteLine($"hemaa hash code: {message02.GetHashCode()}");
+
+
+            #endregion
 
         }
     }
