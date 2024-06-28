@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Security.Cryptography;
 
 namespace Assignment
 {
@@ -73,7 +74,24 @@ namespace Assignment
 
             #endregion
 
-            
+            #region Q4
+            //4 - Write a program that allows the user to insert an integer number
+            //then check If a number is even or odd.
+
+
+           /// int Number;
+           ///      bool flag;
+           ///      do
+           ///      {
+           ///          Console.Write("Enter the Number: ");
+           ///          flag = int.TryParse(Console.ReadLine(), out Number);
+           ///      } while (!flag);
+           ///      if(Number%2==0)
+           ///        Console.WriteLine("the Number is even ");
+           ///      else
+           ///        Console.WriteLine("the Number is odd");
+
+            #endregion
 
 
         }
