@@ -2,17 +2,17 @@
 
 namespace Demo
 {
-    class Person
+ class Person
     {
         public int Id { get; set; }
         public string Name { get; set; }
 
     }
-     class Program
-    {
-        static void Main(string[] args)
-        {
-            #region control Statements 1.Conditional Statements [if , switch] Equality
+  class Program
+ {
+     static void Main(string[] args)
+     {
+         #region control Statements 1.Conditional Statements [if , switch] Equality
             //Q.check if month number in first quarter using if
             ///   Console.Write("please enter an month numbers existed in 1st quarter: ");
             ///   int.TryParse(Console.ReadLine(), out int MonthNumber);
@@ -59,7 +59,7 @@ namespace Demo
 
             #endregion
 
-            #region control Statements 1.Conditional Statements [if , switch] more than and less than
+         #region control Statements 1.Conditional Statements [if , switch] more than and less than
             //Q.check age is greater than 22 (if)
             /// Console.Write("Enter your age: ");
             /// int.TryParse(Console.ReadLine(), out int Age);
@@ -89,7 +89,7 @@ namespace Demo
 
             #endregion
 
-            #region conditional statments if,switch (string datatype)
+         #region conditional statments if,switch (string datatype)
             //Q.enter name of spasefic names
             ///  Console.Write("enter your name: ");
             ///  string name = Console.ReadLine() ?? "no name";
@@ -135,7 +135,7 @@ namespace Demo
 
             #endregion
 
-            #region Evolution of switch c#7.0
+         #region Evolution of switch c#7.0
             /// solve problem of limation types
             ///it supports comparing types out of the box
             ///when (do condition on case also)
@@ -184,7 +184,7 @@ namespace Demo
 
             #endregion
 
-            #region switch with goto
+         #region switch with goto
             //give options based on your budget
             ///   Console.Write("Enter your budget: ");
             ///   double budget = double.Parse(Console.ReadLine()!) ;
@@ -222,7 +222,7 @@ namespace Demo
 
             #endregion
 
-            #region Evolution of switch 8.0 and 9.0
+         #region Evolution of switch 8.0 and 9.0
             //switch Expertion
             #region Example01
 
@@ -281,7 +281,7 @@ namespace Demo
 
             #endregion
 
-            #region Conditional Statements 2.loop statements
+         #region Conditional Statements 2.loop statements
             /*
              * for => to repeat code a number of times
              *     => to loop on elements in collection like array
@@ -299,7 +299,7 @@ namespace Demo
             /// }
             #endregion
 
-            #region For && For each 
+         #region For && For each 
 
             /*
              *in for loop i have fully controll on array
@@ -322,7 +322,7 @@ namespace Demo
 
             #endregion
 
-            #region do while and while
+         #region do while and while
             //Q.check the enter number is even
             int number;
             bool flag;
@@ -354,7 +354,7 @@ namespace Demo
 
             #endregion
 
-            #region String
+         #region String
             //string is a class [reference type], internally is an array of chars
             //string is an immutable type -->can't be changed [internally is an array of chars:array is fixed length]
             string Name;
@@ -389,7 +389,7 @@ namespace Demo
 
             #endregion
 
-            #region StringBuilder
+         #region StringBuilder
             StringBuilder message;
             //Declare for reference of type "stringBuilder"
             //this reference 'message' is refering to the default value of reference type = NULL
@@ -402,16 +402,46 @@ namespace Demo
            // Console.WriteLine($"hash code after change: {message}");
 
             #region StringBuilder method
-            message.Append('\n');//to add on it
-            message.AppendLine();//to add line to it
-            message.AppendFormat($"{0} {1} {true} A");//to add with formate
-            message.Replace("hello", "hala");//to replace string with string
-            message.Clear();//to clear it 
-            message.AppendJoin(";", "ali", "ali");//as concat with sperator
-            message.Insert(0,"ali ");//to insert based on index
-            Console.WriteLine(message);
+          ///  message.Append('\n');//to add on it
+          ///  message.AppendLine();//to add line to it
+          ///  message.AppendFormat($"{0} {1} {true} A");//to add with formate
+          ///  message.Replace("hello", "hala");//to replace string with string
+          ///  message.Clear();//to clear it 
+          ///  message.AppendJoin(";", "ali", "ali");//as concat with sperator
+          ///  message.Insert(0,"ali ");//to insert based on index
+          ///  Console.WriteLine(message);
             #endregion
             #endregion
+
+         #region Array 2 D array
+         int[] numbers;
+         //declare for reference of type (array of integer) 
+         //this reference 'number' is refering to the default value of reference type=NULL
+         //this refernce 'number' can refer to object of type "array of integer "
+         //clr will allocate 4 bytes at stack for the reference [uninitalized]
+         //clr will allocate 0 bytes at HEAP
+
+         numbers = new int[3];
+         //clr will allocate 12 bytes at heap (4 bytes for each element => int)
+         //will by initialized with the default value of int = 0
+         numbers[0] = 1;
+         numbers[1] = 2;
+         numbers[2] = 3;
+            //to display array data
+         ///   Console.WriteLine(numbers[0]);
+         ///   Console.WriteLine(numbers[1]);
+         ///   Console.WriteLine(numbers[2]);
+         ///   Console.WriteLine("length " + numbers.Length + " dimentional "+numbers.Rank);
+         ///
+         ///   for (int i = 0; i < numbers.Length; i++)
+         ///   {
+         ///       Console.WriteLine(numbers[i]);
+         ///   }
+
+
+            #endregion
+
+
         }
-    }
+ }
 }
