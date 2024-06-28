@@ -1,4 +1,6 @@
-﻿namespace Demo
+﻿using System.Text;
+
+namespace Demo
 {
     class Person
     {
@@ -372,21 +374,44 @@
 
 
             //example
-         ///  string message01 = "ahmed";
-         ///  Console.WriteLine($"ahmed hash code: {message01.GetHashCode()}");
-         ///  message01 = "hamed";
-         ///  Console.WriteLine($"hamed hash code: {message01.GetHashCode()}");
-         ///  string message02 = "hemaa";
-         ///  Console.WriteLine($"ahmed hash code: {message01.GetHashCode()}");
-         ///  Console.WriteLine($"hemaa hash code: {message02.GetHashCode()}");
-         ///  Console.WriteLine("*****after equality******");
-         ///  message02 = message01;
-         ///  Console.WriteLine($"ahmed hash code: {message01.GetHashCode()}");
-         ///  Console.WriteLine($"hemaa hash code: {message02.GetHashCode()}");
+            ///  string message01 = "ahmed";
+            ///  Console.WriteLine($"ahmed hash code: {message01.GetHashCode()}");
+            ///  message01 = "hamed";
+            ///  Console.WriteLine($"hamed hash code: {message01.GetHashCode()}");
+            ///  string message02 = "hemaa";
+            ///  Console.WriteLine($"ahmed hash code: {message01.GetHashCode()}");
+            ///  Console.WriteLine($"hemaa hash code: {message02.GetHashCode()}");
+            ///  Console.WriteLine("*****after equality******");
+            ///  message02 = message01;
+            ///  Console.WriteLine($"ahmed hash code: {message01.GetHashCode()}");
+            ///  Console.WriteLine($"hemaa hash code: {message02.GetHashCode()}");
 
 
             #endregion
 
+            #region StringBuilder
+            StringBuilder message;
+            //Declare for reference of type "stringBuilder"
+            //this reference 'message' is refering to the default value of reference type = NULL
+            //clr will allocate 4 byte at stack for the reference 'message'
+            //clr will allocate 0 byte at heap
+
+            message = new StringBuilder("hello");
+           // Console.WriteLine($"hash code before change: {message}");
+           // message.Append(" hema");
+           // Console.WriteLine($"hash code after change: {message}");
+
+            #region StringBuilder method
+            message.Append('\n');//to add on it
+            message.AppendLine();//to add line to it
+            message.AppendFormat($"{0} {1} {true} A");//to add with formate
+            message.Replace("hello", "hala");//to replace string with string
+            message.Clear();//to clear it 
+            message.AppendJoin(";", "ali", "ali");//as concat with sperator
+            message.Insert(0,"ali ");//to insert based on index
+            Console.WriteLine(message);
+            #endregion
+            #endregion
         }
     }
 }
