@@ -386,8 +386,6 @@ namespace Assignment
 
             #endregion
 
-
-
             #region Q14
             //14- Write a program to allow the user to enter int and
             //print the REVERSED of it.
@@ -553,6 +551,36 @@ namespace Assignment
             ///
             ///      Console.WriteLine($"Efficiency Level: {efficiencyLevel}");
 
+            #endregion
+
+            #region Q19
+            //19- . Write a program that prints an identity matrix using for loop,
+            //in other words takes a value n from the user and
+            //shows the identity table of size n * n.
+
+
+          ///   start:
+          ///  Console.Write("Enter the size of the identity matrix (n): ");
+          ///   if( !int.TryParse(Console.ReadLine(),out int n))
+          ///  {
+          ///      Console.WriteLine("error, invalid size of the identity matrix ");
+          ///      goto start;
+          ///  }
+          ///  for (int i = 0; i < n; i++)
+          ///  {
+          ///      for (int j = 0; j < n; j++)
+          ///      {
+          ///          if (i == j)
+          ///          {
+          ///              Console.Write("1 ");
+          ///          }
+          ///          else
+          ///          {
+          ///              Console.Write("0 ");
+          ///          }
+          ///      }
+          ///      Console.WriteLine();
+          ///  }
             #endregion
 
 
