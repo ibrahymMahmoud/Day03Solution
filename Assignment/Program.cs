@@ -626,45 +626,82 @@ namespace Assignment
             #region Q23
             //23- Write a program in C# Sharp to find maximum and minimum element in an array
 
+            ///    int[] array;
+            ///    int size;
+            ///    int ReadElement;
+            ///    int max;
+            ///    int min;
+            ///    bool flag;
+            ///
+            ///    do 
+            ///    {
+            ///        Console.Write("Enter the size of array: ");
+            ///        flag = int.TryParse(Console.ReadLine(), out size);
+            ///        if(flag && size <= 0 )
+            ///         flag = false;
+            ///    }while (!flag);
+            ///
+            ///    array = new int[size];
+            ///    Console.WriteLine("Enter elements of array");
+            ///    for (int i = 0; i < size; i++)
+            ///    {
+            ///        do
+            ///        {
+            ///            Console.Write($"Enter array[{i}]: ");
+            ///            flag = int.TryParse(Console.ReadLine(), out ReadElement);
+            ///        } while (!flag);
+            ///        //this code is repeated => (function)
+            ///        array[i]= ReadElement;
+            ///    }
+            ///
+            ///    max = array[0];
+            ///    min = array[0];
+            ///
+            ///    for (int i = 0; i < size; i++)
+            ///    {
+            ///        max = max < array[i] ? array[i] : max;
+            ///        min = min > array[i] ? array[i]:min ;
+            ///    }
+            ///
+            ///    Console.WriteLine($"the max element in array is {max}");
+            ///    Console.WriteLine($"the min element in array is: {min}");
+
+
+
+            #endregion
+
+            #region Q24
+            //24 - Write a program in C# Sharp to find the second largest element in an array.
+
+
         ///    int[] array;
-        ///    int size;
-        ///    int ReadElement;
-        ///    int max;
-        ///    int min;
-        ///    bool flag;
+        ///           int size;
+        ///           int ReadElement;
+        ///           bool flag;
         ///
-        ///    do 
-        ///    {
-        ///        Console.Write("Enter the size of array: ");
-        ///        flag = int.TryParse(Console.ReadLine(), out size);
-        ///    }while (!flag);
+        ///           do 
+        ///           {
+        ///               Console.Write("Enter the size of array: ");
+        ///               flag = int.TryParse(Console.ReadLine(), out size);
+        ///               if(flag && size <= 0 )
+        ///                  flag = false;
+        ///           }while (!flag);
+        ///       
+        ///           array = new int[size];
         ///
-        ///    array = new int[size];
-        ///    Console.WriteLine("Enter elements of array");
-        ///    for (int i = 0; i < size; i++)
-        ///    {
-        ///        do
-        ///        {
-        ///            Console.Write($"Enter array[{i}]: ");
-        ///            flag = int.TryParse(Console.ReadLine(), out ReadElement);
-        ///        } while (!flag);
-        ///        //this code is repeated => (function)
-        ///        array[i]= ReadElement;
-        ///    }
+        ///           Console.WriteLine("Enter elements of array");
+        ///           for (int i = 0; i < size; i++)
+        ///           {
+        ///               do
+        ///               {
+        ///                   Console.Write($"Enter array[{i}]: ");
+        ///                   flag = int.TryParse(Console.ReadLine(), out ReadElement);
+        ///               } while (!flag);
+        ///               array[i]= ReadElement;
+        ///           }
         ///
-        ///    max = array[0];
-        ///    min = array[0];
-        ///
-        ///    for (int i = 0; i < size; i++)
-        ///    {
-        ///        max = max < array[i] ? array[i] : max;
-        ///        min = min > array[i] ? array[i]:min ;
-        ///    }
-        ///
-        ///    Console.WriteLine($"the max element in array is {max}");
-        ///    Console.WriteLine($"the min element in array is: {min}");
-
-
+        ///           Array.Sort(array);
+        ///    Console.WriteLine($"the second largest element in array: {array[array.Length - 2]}");
 
             #endregion
 
