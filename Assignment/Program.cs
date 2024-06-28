@@ -426,49 +426,72 @@ namespace Assignment
 
 
 
-        ///    int number;
-        ///    bool flag;
-        ///    do
-        ///    {
-        ///        Console.Write("Enter an entger from 1 to 50: ");
-        ///        flag = int.TryParse(Console.ReadLine(), out number);
-        /// 
-        ///    } while (!flag || number < 1 || number > 50);
-        ///
-        ///    switch (number)
-        ///    {
-        ///        case 2:
-        ///        case 3:
-        ///        case 5:
-        ///        case 7:
-        ///        case 11:
-        ///        case 13:
-        ///        case 17:
-        ///        case 19:
-        ///        case 23:
-        ///        case 29:
-        ///        case 31:
-        ///        case 37:
-        ///        case 41:
-        ///        case 43:
-        ///        case 47:
-        ///            Console.WriteLine($"the number is prime: {number} ");
-        ///            break;
-        ///        default:
-        ///            Console.WriteLine($"the number is not prime:  {number}");
-        ///            break;
-        ///
-        ///
-        ///    }
+            ///    int number;
+            ///    bool flag;
+            ///    do
+            ///    {
+            ///        Console.Write("Enter an entger from 1 to 50: ");
+            ///        flag = int.TryParse(Console.ReadLine(), out number);
+            /// 
+            ///    } while (!flag || number < 1 || number > 50);
+            ///
+            ///    switch (number)
+            ///    {
+            ///        case 2:
+            ///        case 3:
+            ///        case 5:
+            ///        case 7:
+            ///        case 11:
+            ///        case 13:
+            ///        case 17:
+            ///        case 19:
+            ///        case 23:
+            ///        case 29:
+            ///        case 31:
+            ///        case 37:
+            ///        case 41:
+            ///        case 43:
+            ///        case 47:
+            ///            Console.WriteLine($"the number is prime: {number} ");
+            ///            break;
+            ///        default:
+            ///            Console.WriteLine($"the number is not prime:  {number}");
+            ///            break;
+            ///
+            ///
+            ///    }
 
 
             #endregion
 
-            
+            #region Q16
 
-            
+            ///     int decimalNumber;
+            ///        bool flag;
+            ///        do
+            ///        {
+            ///            Console.Write("Enter a number to convert ");
+            ///            flag = int.TryParse(Console.ReadLine(), out decimalNumber);
+            ///        } while (!flag);
+            ///
+            ///     string binary = "";
+            ///     while (decimalNumber > 0)
+            ///     {
+            ///         binary = (decimalNumber % 2) + binary;
+            ///         decimalNumber /= 2;
+            ///     }
+            ///
+            ///     string binaryNumber = binary;
+            ///     Console.WriteLine($"The Binary  is : {binaryNumber}.");
 
-           
+
+            #endregion
+
+
+
+
+
+
 
         }
 
