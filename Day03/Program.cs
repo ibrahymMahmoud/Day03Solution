@@ -441,7 +441,7 @@ namespace Demo
 
             #endregion
 
-            #region Array 2 D array
+         #region Array 2 D array
             int[,] student = new int[3,5] { { 1, 2, 3, 4, 5 }, { 1, 2, 3, 4, 5 }, { 1, 2, 3, 4, 5 } };
             int[,] students = new int[3, 5] { { 1, 2, 3, 4, 5 }, { 1, 2, 3, 4, 5 }, { 1, 2, 3, 4, 5 } };
             //clr will allocate 60bytes at heap
@@ -475,6 +475,16 @@ namespace Demo
                 Console.WriteLine("\n*************");
 
             }
+            #endregion
+
+            #region array 2 D judged array
+            int[][] marks = new int[3][];
+            marks[0] = new int[3] { 1, 2, 3 };
+            marks[1] = new int[2] { 1,  3 };
+            marks[2] = new int[1] { 1 };
+
+
+
             #endregion
 
 
