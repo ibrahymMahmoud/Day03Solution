@@ -44,6 +44,37 @@ namespace Assignment
             ///       Console.WriteLine("it is positive number ");
             #endregion
 
+            #region Q3
+            //3- Write a program that takes 3 integers from the user
+            //then prints the max element and the min element.
+
+            ///     int Number01;
+            ///     int Number02;
+            ///     int Number03;
+            ///     bool flag;
+            ///     do
+            ///     {
+            ///         Console.Write("Enter the Number01: ");
+            ///         flag = int.TryParse(Console.ReadLine(), out Number01);
+            ///     } while (!flag);
+            ///     do
+            ///     {
+            ///         Console.Write("Enter the Number02: ");
+            ///         flag = int.TryParse(Console.ReadLine(), out Number02);
+            ///     } while (!flag);
+            ///    do
+            ///    {
+            ///        Console.Write("Enter the Number03: ");
+            ///        flag = int.TryParse(Console.ReadLine(), out Number03);
+            ///    } while (!flag);
+            ///
+            ///  int max = Number01 > Number02 ? (Number01 > Number03 ? Number01 : Number02) : (Number02 > Number03 ? Number02 : Number03);
+            ///  Console.WriteLine($"the max number is: {max}");
+
+            #endregion
+
+            
+
 
         }
     }
