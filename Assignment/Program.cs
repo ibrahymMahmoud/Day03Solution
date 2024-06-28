@@ -122,18 +122,42 @@ namespace Assignment
             //6- Write a program that allows the user to insert an integer
             //then print all numbers between 1 to that number.
 
-          ///     int Number;
-          ///     bool flag;
-          ///     do
-          ///     {
-          ///         Console.Write("Enter the Number: ");
-          ///         flag = int.TryParse(Console.ReadLine(), out Number);
-          ///     } while (!flag);
-          ///
-          ///     for (int i = 1; i <= Number; i++)
-          ///      Console.WriteLine(i);
-           
+            ///     int Number;
+            ///     bool flag;
+            ///     do
+            ///     {
+            ///         Console.Write("Enter the Number: ");
+            ///         flag = int.TryParse(Console.ReadLine(), out Number);
+            ///     } while (!flag);
+            ///
+            ///     for (int i = 1; i <= Number; i++)
+            ///      Console.WriteLine(i);
+
             #endregion
+
+            #region Q7
+            //7- Write a program that allows the user to insert an integer then 
+            //print a multiplication table up to 12.
+
+            // Prompt the user to enter an integer
+            start:
+            Console.Write("Enter an integer: ");
+            int number;
+            if (!int.TryParse(Console.ReadLine(), out number))
+            {
+                Console.WriteLine("Error: Invalid input. Please enter an integer.");
+                goto start;
+            }
+
+            Console.WriteLine($"Multiplication table for {number}:");
+            for (int i = 1; i <= 12; i++)
+            {
+                Console.WriteLine($"{number} x {i} = {number * i}");
+            }
+
+            #endregion
+
+
 
         }
     }
