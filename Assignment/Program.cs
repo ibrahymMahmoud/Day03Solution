@@ -559,28 +559,40 @@ namespace Assignment
             //shows the identity table of size n * n.
 
 
-          ///   start:
-          ///  Console.Write("Enter the size of the identity matrix (n): ");
-          ///   if( !int.TryParse(Console.ReadLine(),out int n))
-          ///  {
-          ///      Console.WriteLine("error, invalid size of the identity matrix ");
-          ///      goto start;
-          ///  }
-          ///  for (int i = 0; i < n; i++)
-          ///  {
-          ///      for (int j = 0; j < n; j++)
-          ///      {
-          ///          if (i == j)
-          ///          {
-          ///              Console.Write("1 ");
-          ///          }
-          ///          else
-          ///          {
-          ///              Console.Write("0 ");
-          ///          }
-          ///      }
-          ///      Console.WriteLine();
-          ///  }
+            ///   start:
+            ///  Console.Write("Enter the size of the identity matrix (n): ");
+            ///   if( !int.TryParse(Console.ReadLine(),out int n))
+            ///  {
+            ///      Console.WriteLine("error, invalid size of the identity matrix ");
+            ///      goto start;
+            ///  }
+            ///  for (int i = 0; i < n; i++)
+            ///  {
+            ///      for (int j = 0; j < n; j++)
+            ///      {
+            ///          if (i == j)
+            ///          {
+            ///              Console.Write("1 ");
+            ///          }
+            ///          else
+            ///          {
+            ///              Console.Write("0 ");
+            ///          }
+            ///      }
+            ///      Console.WriteLine();
+            ///  }
+            #endregion
+
+            #region Q20
+            //20- Write a program in C# Sharp to find the sum of all elements of the array.
+
+       ///     int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+       ///     int sum = 0;
+       ///     for (int i = 0; i < numbers.Length; i++)
+       ///     {
+       ///         sum += numbers[i];
+       ///     }
+       ///     Console.WriteLine("the sum of array is: "+sum);
             #endregion
 
 
