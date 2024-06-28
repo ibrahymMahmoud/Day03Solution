@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Security.Cryptography;
+using static System.Net.Mime.MediaTypeNames;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assignment
@@ -383,8 +384,93 @@ namespace Assignment
 
             #endregion
 
+            #region Q14
+            //14- Write a program to allow the user to enter int and
+            //print the REVERSED of it.
 
+
+
+            ///    int userInput;
+            ///       bool flag;
+            ///       do
+            ///       {
+            ///           Console.Write("Enter an integer: ");
+            ///           flag = int.TryParse(Console.ReadLine(), out userInput);
+            ///       } while (!flag);
+            /// 
+            ///    int reversedNumber = 0;
+            /// 
+            ///    while (userInput != 0)
+            ///    {
+            ///        int digit = userInput % 10;
+            ///        reversedNumber = reversedNumber * 10 + digit;
+            ///        userInput /= 10;
+            ///    }
+            /// 
+            ///    Console.WriteLine("The reversed integer is: " + reversedNumber);
+
+
+
+            #endregion
+
+            #region Q15
+            //15- Write a program in C# Sharp to find prime numbers within a range of numbers.
+
+            // Test Data :
+            //Input starting number of range: 1
+            //Input ending number of range: 50
+            //
+            //Expected Output :
+            //The prime number between 1 and 50 are:
+            //2 3 5 7 11 13 17 19 23 29 31 37 41 43 47
+
+
+
+        ///    int number;
+        ///    bool flag;
+        ///    do
+        ///    {
+        ///        Console.Write("Enter an entger from 1 to 50: ");
+        ///        flag = int.TryParse(Console.ReadLine(), out number);
+        /// 
+        ///    } while (!flag || number < 1 || number > 50);
+        ///
+        ///    switch (number)
+        ///    {
+        ///        case 2:
+        ///        case 3:
+        ///        case 5:
+        ///        case 7:
+        ///        case 11:
+        ///        case 13:
+        ///        case 17:
+        ///        case 19:
+        ///        case 23:
+        ///        case 29:
+        ///        case 31:
+        ///        case 37:
+        ///        case 41:
+        ///        case 43:
+        ///        case 47:
+        ///            Console.WriteLine($"the number is prime: {number} ");
+        ///            break;
+        ///        default:
+        ///            Console.WriteLine($"the number is not prime:  {number}");
+        ///            break;
+        ///
+        ///
+        ///    }
+
+
+            #endregion
+
+            
+
+            
+
+           
 
         }
+
     }
 }
