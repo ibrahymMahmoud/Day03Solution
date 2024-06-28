@@ -185,29 +185,72 @@ namespace Assignment
             // 9 - Write a program that takes two integers then prints the power.
 
 
-          ///       int Number01;
-          ///       int Number02;
-          ///       bool flag;
-          ///       do
-          ///       {
-          ///           Console.Write("Enter the Number01: ");
-          ///           flag = int.TryParse(Console.ReadLine(), out Number01);
-          ///       } while (!flag);
-          ///       do
-          ///       {
-          ///           Console.Write("Enter the Number02: ");
-          ///           flag = int.TryParse(Console.ReadLine(), out Number02);
-          ///       } while (!flag);
-          ///
-          ///  
-          ///  double result = Math.Pow(Number01, Number02);
-          ///
-          ///  
-          ///  Console.WriteLine($"{Number01}  power  {Number02} is: {result}");
+            ///       int Number01;
+            ///       int Number02;
+            ///       bool flag;
+            ///       do
+            ///       {
+            ///           Console.Write("Enter the Number01: ");
+            ///           flag = int.TryParse(Console.ReadLine(), out Number01);
+            ///       } while (!flag);
+            ///       do
+            ///       {
+            ///           Console.Write("Enter the Number02: ");
+            ///           flag = int.TryParse(Console.ReadLine(), out Number02);
+            ///       } while (!flag);
+            ///
+            ///  
+            ///  double result = Math.Pow(Number01, Number02);
+            ///
+            ///  
+            ///  Console.WriteLine($"{Number01}  power  {Number02} is: {result}");
 
             #endregion
 
+            #region Q10
+            //10- Write a program to enter marks of five subjects
+            //and calculate total, average and percentage.
 
+            
+
+            
+        ///    double total =0;
+        ///    double average;
+        ///    double percentage;
+        ///    double subjectMark;
+        ///    bool flag;
+        ///
+        ///    Console.WriteLine("Enter marks of subjects from 100 (full mark = 100) ");
+        ///
+        ///    for (int i = 0; i < 5; i++)
+        ///    {
+        ///         do
+        ///         {
+        ///             Console.Write($"Enter the Number of subject{i+1}: ");
+        ///             flag = double.TryParse(Console.ReadLine(), out subjectMark);
+        ///
+        ///            if( flag && subjectMark <= 100 && subjectMark >= 0)
+        ///                flag= false;
+        ///            else 
+        ///                flag = true;   
+        ///
+        ///         } while (flag);
+        ///
+        ///        total = total + subjectMark;
+        ///
+        ///    }
+        ///
+        ///     average = total / 5;
+        ///     percentage = total / 500 * 100;
+        ///
+        ///
+        ///    Console.WriteLine("\nResults:");
+        ///    Console.WriteLine($"Total marks: {total}");
+        ///    Console.WriteLine($"Average marks: {average:F2}");
+        ///    Console.WriteLine($"Percentage: {percentage:F2}%");
+           
+
+            #endregion
 
 
         }
