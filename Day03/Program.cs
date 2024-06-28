@@ -449,39 +449,67 @@ namespace Demo
 
 
             //to enter this elements
-            for (int i = 0; i < students.GetLength(0)/*3*/; i++)
-            {
-                Console.WriteLine($"Enter values of student NO.[{i+1}]");
-
-                for (int j = 0; j < students.GetLength(1)/*3*/; /*j++*/) 
-                {
-                    Console.Write($"Enter value of student NO{i} for materal NO.[{j+1}]: ");
-                    //  students[i,j]=int.Parse(Console.ReadLine()); //tocheck all senairos
-                    j = int.TryParse(Console.ReadLine(), out students[i, j]) ? ++j:j ;
-
-                }
-       
-            }
-            Console.WriteLine("\n  display array \n");
-            //to display them
-            for (int i = 0; i < 3; i++)
-            {
-
-                for (int j = 0; j < 5; j++)
-                {
-                    Console.WriteLine($"students[{i}, {j}]: {students[i, j]} ");
-
-                }
-                Console.WriteLine("\n*************");
-
-            }
+        ///    for (int i = 0; i < students.GetLength(0)/*3*/; i++)
+        ///    {
+        ///        Console.WriteLine($"Enter values of student NO.[{i+1}]");
+        ///
+        ///        for (int j = 0; j < students.GetLength(1)/*3*/; /*j++*/) 
+        ///        {
+        ///            Console.Write($"Enter value of student NO{i} for materal NO.[{j+1}]: ");
+        ///            //  students[i,j]=int.Parse(Console.ReadLine()); //tocheck all senairos
+        ///            j = int.TryParse(Console.ReadLine(), out students[i, j]) ? ++j:j ;
+        ///
+        ///        }
+        ///
+        ///    }
+        ///    Console.WriteLine("\n  display array \n");
+        ///    //to display them
+        ///    for (int i = 0; i < 3; i++)
+        ///    {
+        ///
+        ///        for (int j = 0; j < 5; j++)
+        ///        {
+        ///            Console.WriteLine($"students[{i}, {j}]: {students[i, j]} ");
+        ///
+        ///        }
+        ///        Console.WriteLine("\n*************");
+        ///
+        ///    }
             #endregion
 
-            #region array 2 D judged array
-            int[][] marks = new int[3][];
-            marks[0] = new int[3] { 1, 2, 3 };
-            marks[1] = new int[2] { 1,  3 };
-            marks[2] = new int[1] { 1 };
+         #region array 2 D judged array
+            /// int[][] marks = new int[3][];
+            /// marks[0] = new int[3] { 1, 2, 3 };
+            /// marks[1] = new int[2] { 1,  3 };
+            /// marks[2] = new int[1] { 1 };
+            ///
+
+
+            #endregion
+
+         #region array method
+            //class member method 
+            int[] marks = new int[] { 2, 3, 5, 6, 7, 5, 2, 3, 4, 5, 6, 7, 8, 9, };
+            int[] arr01 = new int[] { 2, 3, 5, 6, 7 };
+            int[] arr02 = new int[] { 2, 3, 4, 5 };
+            ///      Array.Sort(arr01);  //to sort array desc
+            ///      Array.Reverse(arr02);//to reverse the array
+            ///      Array.Clear(arr01);//to replace elements values with default
+            ///      Array.ConstrainedCopy(arr02 , 0,arr01, 0,3);
+            ///      //to replace from array to different array from which index in two array and length of copy
+            ///      Array.Copy(arr02, arr01, 4); //to copy from array to another with Determines lenght of copy
+            ///      
+            ///      foreach (var item in arr02)
+            ///      {
+            ///          Console.WriteLine(item);
+            ///      }
+
+            //object array method
+
+            arr01.CopyTo(arr02, 2);//to copy array and determines the start element
+            arr02.GetLength(0);//to get length of dimentional
+            arr02.GetValue(0);  //to get value of element on array based on index
+            arr02.SetValue(20, 3);//to set value of element on array based on index
 
 
 
