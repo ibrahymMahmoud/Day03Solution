@@ -772,61 +772,74 @@ namespace Assignment
 
 
 
-       ///     int[,] array01;
-       ///     int[,] array02;
-       ///
-       ///     int rows;
-       ///     int columns;
-       ///     Console.Write("Enter the rows of array: ");
-       ///     if (!int.TryParse(Console.ReadLine(), out rows) || rows < 0)
-       ///     {
-       ///         Console.WriteLine("error,this is not valid rows");
-       ///         return;
-       ///     }
-       ///     Console.Write("Enter the columns of array: ");
-       ///     if (!int.TryParse(Console.ReadLine(), out columns) || columns < 0)
-       ///     {
-       ///         Console.WriteLine("error,this is not valid columns");
-       ///         return;
-       ///     }
-       ///     array01 = new int[rows, columns];
-       ///     array02 = new int[rows, columns];
-       ///
-       ///     for (int i = 0; i < array01.GetLength(0); i++)
-       ///     {
-       ///         for (int j = 0; j < array01.GetLength(1); j++)
-       ///         {
-       ///             Console.Write($"enter array[{i}][{j}]: ");
-       ///             array01[i, j] = int.TryParse(Console.ReadLine(), out int element) ? element : 0;
-       ///         }
-       ///         Console.WriteLine("\n****************\n");
-       ///     }
-       ///
-       ///     for (int i = 0; i < array02.GetLength(0); i++)
-       ///     {
-       ///         for (int j = 0; j < array02.GetLength(1); j++)
-       ///         {
-       ///             array02[i, j] =array01[i, j];
-       ///
-       ///         }
-       ///         
-       ///     }
-       ///
-       ///
-       ///
-       ///     for (int i = 0; i < array02.GetLength(0); i++)
-       ///     {
-       ///         for (int j = 0; j < array02.GetLength(1); j++)
-       ///         {
-       ///             Console.WriteLine($"array02[{i}][{j}]: {array02[i, j]} ");
-       ///
-       ///         }
-       ///         Console.WriteLine("\n****************\n");
-       ///     }
+            ///     int[,] array01;
+            ///     int[,] array02;
+            ///
+            ///     int rows;
+            ///     int columns;
+            ///     Console.Write("Enter the rows of array: ");
+            ///     if (!int.TryParse(Console.ReadLine(), out rows) || rows < 0)
+            ///     {
+            ///         Console.WriteLine("error,this is not valid rows");
+            ///         return;
+            ///     }
+            ///     Console.Write("Enter the columns of array: ");
+            ///     if (!int.TryParse(Console.ReadLine(), out columns) || columns < 0)
+            ///     {
+            ///         Console.WriteLine("error,this is not valid columns");
+            ///         return;
+            ///     }
+            ///     array01 = new int[rows, columns];
+            ///     array02 = new int[rows, columns];
+            ///
+            ///     for (int i = 0; i < array01.GetLength(0); i++)
+            ///     {
+            ///         for (int j = 0; j < array01.GetLength(1); j++)
+            ///         {
+            ///             Console.Write($"enter array[{i}][{j}]: ");
+            ///             array01[i, j] = int.TryParse(Console.ReadLine(), out int element) ? element : 0;
+            ///         }
+            ///         Console.WriteLine("\n****************\n");
+            ///     }
+            ///
+            ///     for (int i = 0; i < array02.GetLength(0); i++)
+            ///     {
+            ///         for (int j = 0; j < array02.GetLength(1); j++)
+            ///         {
+            ///             array02[i, j] =array01[i, j];
+            ///
+            ///         }
+            ///         
+            ///     }
+            ///
+            ///
+            ///
+            ///     for (int i = 0; i < array02.GetLength(0); i++)
+            ///     {
+            ///         for (int j = 0; j < array02.GetLength(1); j++)
+            ///         {
+            ///             Console.WriteLine($"array02[{i}][{j}]: {array02[i, j]} ");
+            ///
+            ///         }
+            ///         Console.WriteLine("\n****************\n");
+            ///     }
 
             #endregion
 
+            #region Q28
 
+            //28- Write a Program to Print One Dimensional Array in Reverse Order
+
+
+           /// int[] numbers = {2,1,9,8,7,2,0,10,12};
+           /// Array.Sort(numbers);
+           /// Array.Reverse(numbers);
+           /// foreach (var number in numbers)
+           /// {
+           ///     Console.WriteLine(number);
+           /// }
+
+            #endregion
 
 
 
