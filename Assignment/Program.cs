@@ -674,36 +674,73 @@ namespace Assignment
             //24 - Write a program in C# Sharp to find the second largest element in an array.
 
 
-        ///    int[] array;
-        ///           int size;
-        ///           int ReadElement;
-        ///           bool flag;
-        ///
-        ///           do 
-        ///           {
-        ///               Console.Write("Enter the size of array: ");
-        ///               flag = int.TryParse(Console.ReadLine(), out size);
-        ///               if(flag && size <= 0 )
-        ///                  flag = false;
-        ///           }while (!flag);
-        ///       
-        ///           array = new int[size];
-        ///
-        ///           Console.WriteLine("Enter elements of array");
-        ///           for (int i = 0; i < size; i++)
-        ///           {
-        ///               do
-        ///               {
-        ///                   Console.Write($"Enter array[{i}]: ");
-        ///                   flag = int.TryParse(Console.ReadLine(), out ReadElement);
-        ///               } while (!flag);
-        ///               array[i]= ReadElement;
-        ///           }
-        ///
-        ///           Array.Sort(array);
-        ///    Console.WriteLine($"the second largest element in array: {array[array.Length - 2]}");
+            ///    int[] array;
+            ///           int size;
+            ///           int ReadElement;
+            ///           bool flag;
+            ///
+            ///           do 
+            ///           {
+            ///               Console.Write("Enter the size of array: ");
+            ///               flag = int.TryParse(Console.ReadLine(), out size);
+            ///               if(flag && size <= 0 )
+            ///                  flag = false;
+            ///           }while (!flag);
+            ///       
+            ///           array = new int[size];
+            ///
+            ///           Console.WriteLine("Enter elements of array");
+            ///           for (int i = 0; i < size; i++)
+            ///           {
+            ///               do
+            ///               {
+            ///                   Console.Write($"Enter array[{i}]: ");
+            ///                   flag = int.TryParse(Console.ReadLine(), out ReadElement);
+            ///               } while (!flag);
+            ///               array[i]= ReadElement;
+            ///           }
+            ///
+            ///           Array.Sort(array);
+            ///    Console.WriteLine($"the second largest element in array: {array[array.Length - 2]}");
 
             #endregion
+
+            #region Q25
+
+
+       ///     int[] numbers = {2,2,2,2,2,2,2,2,2,2,2} /*{7,0,0,0,5,6,7,5,0,7,5,3,}*/;
+       ///     int element01=0;//index of first element (1)
+       ///     int element02=0;//index of second element (2)
+       ///     bool flag = false;//to check if their is not equals elements
+       ///     int space =0 ;
+       ///     //i < numbers.Length-1 no need to check the last element
+       ///     for (int i = 0; i < numbers.Length-1 ; i++)
+       ///     {
+       ///         //j = i+1 to start compare with the after element 
+       ///         //no need to compare from start
+       ///         for (int j = i+1 ; j < numbers.Length ; j++)
+       ///         {
+       ///             if ( numbers[i] == numbers[j])
+       ///             {
+       ///                 flag = true;
+       ///                 if (space < (j-i) )
+       ///                 { 
+       ///                     space = j-i;
+       ///                     element01=i;
+       ///                     element02=j;
+       ///                 }
+       ///             }
+       ///         }
+       ///     }
+       ///     if (flag) {
+       ///         Console.WriteLine($"element value is {numbers[element01]} in index {element01} and index {element02}");
+       ///         Console.WriteLine($"space is: {space-1}");
+       ///      }else
+       ///         Console.WriteLine("no elements are equals");
+
+            #endregion
+
+
 
 
 
